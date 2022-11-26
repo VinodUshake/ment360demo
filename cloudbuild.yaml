@@ -1,0 +1,18 @@
+##git clone repository
+##steps Build Docker image
+## Push Docker image to gcr
+##Create Cloud Run service with Docker image
+
+steps:
+  - name: "gcr.io/cloud-builders/git"
+    args: ["clone", "https://github.com/VinodUshake/ment360demo.git"]
+
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["build", "-t", "gcr.io/first-melody-361000/dynamicment360:latest", "."]
+  - name: "gcr.io/cloud-builders/docker"
+    args: ["push", "gcr.io/first-melody-361000/dynamicment360:latest"]
+  - name: "gcr.io/cloud-builder/gcloud"
+    args: ["run", "deploy", "ment360cloudbuild", "--image", "gcr.io/first-melody-361000/dynamicment360:latest", "--allow-unauthenticated"]
+
+images:
+- gcr.io/first-melody-361000/dynamicment360:latest
