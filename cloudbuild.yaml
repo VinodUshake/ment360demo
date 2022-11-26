@@ -12,7 +12,7 @@ steps:
   - name: "gcr.io/cloud-builders/docker"
     args: ["push", "gcr.io/first-melody-361000/dynamicment360:latest"]
   - name: "gcr.io/cloud-builders/gcloud"
-    args: ["run", "deploy", "ment360cloudbuild", "--image", "gcr.io/first-melody-361000/dynamicment360:latest", "--allow-unauthenticated"]
+    args: ["run", "deploy", "ment360cloudbuild", "--image", "gcr.io/first-melody-361000/dynamicment360:latest", "--allow-unauthenticated", "--region", "us-central1"]
 
 images:
 - gcr.io/first-melody-361000/dynamicment360:latest
