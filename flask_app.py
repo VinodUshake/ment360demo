@@ -1,4 +1,4 @@
-
+##requirement python run dependence & making server ready
 from flask import Flask
 import os
 PORT = os.environ.get("PORT",5000)
@@ -17,5 +17,5 @@ def contact():
 def root():
     return {"message":"You are on root page"}
 
-
+#Wellcome
 server.run("0.0.0.0",PORT)
