@@ -15,7 +15,7 @@ def contact():
 #Main URL Page
 @server.route("/",methods=["GET"])
 def root():
-    return {"message":"You are on root page"}
+    return {"message":"Demo Test"}
 
 #Wellcome
 server.run("0.0.0.0",PORT)
