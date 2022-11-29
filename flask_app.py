@@ -12,10 +12,10 @@ def home():
 def contact():
     return {"message":"Welcome Ment360!"}
 
-
+#Main URL Page
 @server.route("/",methods=["GET"])
 def root():
     return {"message":"You are on root page"}
 
-# if __name__ == "__main__" :
+
 server.run("0.0.0.0",PORT)
