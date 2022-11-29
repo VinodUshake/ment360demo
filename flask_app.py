@@ -9,7 +9,7 @@ server = Flask(__name__)
 def home():
     return {"message":"Hello world!"}
 @server.route("/contact",methods=["GET"])
-def home():
+def contact():
     return {"message":"Welcome Ment360!"}
 
 
