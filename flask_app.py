@@ -8,6 +8,12 @@ server = Flask(__name__)
 @server.route("/home",methods=["GET"])
 def home():
     return {"message":"Hello world!"}
+@server.route("/contact",methods=["GET"])
+def home():
+    return {"message":"Welcome Ment360!"}
+
+
+
 
 @server.route("/",methods=["GET"])
 def root():
