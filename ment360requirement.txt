@@ -1,2 +1,2 @@
-#this task help create cloud run serive with recetenly created docker images
+#this task help create cloud run service with recently created docker images
 flask==2.2.2

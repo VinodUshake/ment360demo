@@ -1,8 +1,9 @@
+##Key files to Run Cloud Build
 ##Automating cloud build process ---> creating Trigger in cloud build
-##git clone repository
-##steps Build Docker image
-## Push Docker image to gcr
-##Create Cloud Run service with Docker image
+##clone repository --> Cloning -->GCR i/o Cloud Build to connect Git command
+##Build Docker image --> it will build & automate docker's
+##Push Docker image to google container registery
+##It will Create Cloud Run service with Docker image
 
 steps:
   - name: "gcr.io/cloud-builders/git"
