@@ -13,8 +13,6 @@ def home():
     return {"message":"Welcome Ment360!"}
 
 
-
-
 @server.route("/",methods=["GET"])
 def root():
     return {"message":"You are on root page"}
